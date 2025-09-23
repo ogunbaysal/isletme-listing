@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//var/folders/s5/dx6v6qf960n7wnzq_s5tmpl80000gn/T/TemporaryItems/NSIRD_screencaptureui_o5B5zO/**)",
+      "Read(//var/folders/s5/dx6v6qf960n7wnzq_s5tmpl80000gn/T/TemporaryItems/NSIRD_screencaptureui_RhbODa/**)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "Bash(npm install:*)",
+      "Bash(php artisan migrate:fresh:*)",
+      "Bash(npm run types:*)",
+      "Bash(php artisan:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
