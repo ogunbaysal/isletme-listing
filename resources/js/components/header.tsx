@@ -34,7 +34,7 @@ export function Header() {
                                     <path d="M20.5 11.5c0-2.5-2-4.5-4.5-4.5s-4.5 2-4.5 4.5c0 3 4.5 8.5 4.5 8.5s4.5-5.5 4.5-8.5z"/>
                                     <circle cx="16" cy="11.5" r="2"/>
                                 </svg>
-                                <span className="ml-2 text-xl font-bold text-red-500">airbnb</span>
+                                <span className="ml-2 text-xl font-bold text-red-500">tatil</span>
                             </a>
                         </div>
 
@@ -58,7 +58,7 @@ export function Header() {
                         <div className="flex items-center space-x-4">
                             {/* Become a host */}
                             <button className="hidden text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-full px-3 py-2 md:block">
-                                Ev Sahipliği Yapın
+                                İşletmenizi Ekleyin
                             </button>
 
                             {/* Language/Region */}
@@ -98,7 +98,7 @@ export function Header() {
                                     <path d="M20.5 11.5c0-2.5-2-4.5-4.5-4.5s-4.5 2-4.5 4.5c0 3 4.5 8.5 4.5 8.5s4.5-5.5 4.5-8.5z"/>
                                     <circle cx="16" cy="11.5" r="2"/>
                                 </svg>
-                                <span className="ml-2 text-xl font-bold text-red-500">airbnb</span>
+                                <span className="ml-2 text-xl font-bold text-red-500">tatil</span>
                             </a>
                         </div>
 
@@ -118,7 +118,7 @@ export function Header() {
                         <div className="flex items-center space-x-4">
                             {/* Become a host */}
                             <button className="hidden text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-full px-3 py-2 md:block">
-                                Ev Sahipliği Yapın
+                                İşletmenizi Ekleyin
                             </button>
 
                             {/* Language/Region */}

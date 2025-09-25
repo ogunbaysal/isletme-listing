@@ -8,7 +8,10 @@
       "Bash(npm install:*)",
       "Bash(php artisan migrate:fresh:*)",
       "Bash(npm run types:*)",
-      "Bash(php artisan:*)"
+      "Bash(php artisan:*)",
+      "Read(//var/folders/s5/dx6v6qf960n7wnzq_s5tmpl80000gn/T/TemporaryItems/NSIRD_screencaptureui_zEBPqA/**)",
+      "WebSearch",
+      "WebFetch(domain:www.radix-ui.com)"
     ],
     "deny": [],
     "ask": []

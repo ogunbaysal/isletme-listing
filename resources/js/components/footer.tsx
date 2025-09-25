@@ -20,29 +20,28 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Ev sahipliği Column */}
+                    {/* İşletme Column */}
                     <div>
-                        <h4 className="mb-4 font-medium text-gray-900">Ev sahipliği</h4>
+                        <h4 className="mb-4 font-medium text-gray-900">İşletmenizi Ekleyin</h4>
                         <ul className="space-y-3 text-sm text-gray-600">
-                            <li><a href="#" className="hover:underline">Evinizi Airbnb'ye taşıyın</a></li>
-                            <li><a href="#" className="hover:underline">Ev sahipleri için AirCover</a></li>
-                            <li><a href="#" className="hover:underline">Ev sahipliği kaynakları</a></li>
+                            <li><a href="#" className="hover:underline">İşletmenizi Ekleyin</a></li>
+                            <li><a href="#" className="hover:underline">İşletmenizi Ekleyin</a></li>
+                            <li><a href="#" className="hover:underline">İşletmenizi Ekleyin</a></li>
                             <li><a href="#" className="hover:underline">Topluluk forumu</a></li>
-                            <li><a href="#" className="hover:underline">Sorumlu ev sahipliği</a></li>
-                            <li><a href="#" className="hover:underline">Ücretsiz bir ev sahipliği dersine katılın</a></li>
-                            <li><a href="#" className="hover:underline">Yardımcı ilan sahibi bulun</a></li>
+                            <li><a href="#" className="hover:underline">Sorumlu İşletme</a></li>
+                            <li><a href="#" className="hover:underline">Ücretsiz bir işletmenizi ekleyin dersine katılın</a></li>
+                            <li><a href="#" className="hover:underline">Yardımcı işletmenizi ekleyin bulun</a></li>
                         </ul>
                     </div>
 
-                    {/* Airbnb Column */}
+                    {/* Tatil Column */}
                     <div>
-                        <h4 className="mb-4 font-medium text-gray-900">Airbnb</h4>
+                        <h4 className="mb-4 font-medium text-gray-900">İşletme</h4>
                         <ul className="space-y-3 text-sm text-gray-600">
                             <li><a href="#" className="hover:underline">2025 Yaz Sürümü</a></li>
                             <li><a href="#" className="hover:underline">Basın odası</a></li>
                             <li><a href="#" className="hover:underline">Kariyer</a></li>
                             <li><a href="#" className="hover:underline">Yatırımcılar</a></li>
-                            <li><a href="#" className="hover:underline">Airbnb.org acil konaklamalar</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +50,7 @@ export function Footer() {
                 <div className="mt-12 flex flex-col items-start justify-between space-y-4 border-t border-gray-200 pt-8 lg:flex-row lg:items-center lg:space-y-0">
                     {/* Left side - Copyright and legal links */}
                     <div className="flex flex-col space-y-2 text-sm text-gray-600 lg:flex-row lg:items-center lg:space-x-4 lg:space-y-0">
-                        <span>© 2025 Airbnb, Inc.</span>
+                        <span>© 2025 Tatil, Inc.</span>
                         <span className="hidden lg:inline">·</span>
                         <a href="#" className="hover:underline">Gizlilik</a>
                         <span className="hidden lg:inline">·</span>

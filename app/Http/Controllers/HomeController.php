@@ -80,14 +80,17 @@ class HomeController extends Controller
     private function getDefaultImageForType($placeTypeSlug)
     {
         $defaultImages = [
-            'konaklama' => 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400',
-            'restoran' => 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400',
-            'aktivite' => 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400',
-            'eglence' => 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400',
-            'alisveris' => 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400',
+            'konaklama' => 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+            'restoran' => 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+            'aktivite' => 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+            'eglence' => 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+            'alisveris' => 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+            'saglik-spa' => 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+            'ulasim' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+            'kultur-muze' => 'https://images.unsplash.com/photo-1594736797933-d0b22084e7c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
         ];
 
-        return $defaultImages[$placeTypeSlug] ?? 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400';
+        return $defaultImages[$placeTypeSlug] ?? 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80';
     }
 
     public function search(Request $request)
@@ -117,5 +120,83 @@ class HomeController extends Controller
             'listings' => $listings,
             'filters' => $request->only(['location', 'check_in', 'check_out', 'guests', 'place_type']),
         ]);
+    }
+
+    public function show($id)
+    {
+        $listing = Listing::where('id', $id)
+            ->where('status', Listing::STATUS_APPROVED)
+            ->where('visibility', Listing::VISIBILITY_PUBLIC)
+            ->with(['placeType', 'media', 'owner'])
+            ->firstOrFail();
+
+        // Generate realistic pricing and rating based on place type and features
+        $basePrice = $this->generatePriceForListing($listing);
+        $rating = round(rand(450, 498) / 100, 2); // 4.50-4.98
+        $reviewCount = rand(15, 250);
+
+        return Inertia::render('listing', [
+            'listing' => [
+                'id' => $listing->id,
+                'title' => $listing->title,
+                'summary' => $listing->summary,
+                'description' => $listing->description,
+                'city' => $listing->city,
+                'region' => $listing->region,
+                'country' => $listing->country,
+                'address_line1' => $listing->address_line1,
+                'contact_phone' => $listing->contact_phone,
+                'website_url' => $listing->website_url,
+                'status' => $listing->status,
+                'is_featured' => $listing->is_featured,
+                'place_type' => [
+                    'id' => $listing->placeType->id,
+                    'name' => $listing->placeType->name,
+                    'slug' => $listing->placeType->slug,
+                    'icon' => $listing->placeType->icon,
+                ],
+                'media' => $listing->media->map(function ($media) {
+                    return [
+                        'id' => $media->id,
+                        'path' => $media->path,
+                        'alt_text' => $media->alt_text,
+                        'caption' => $media->caption,
+                        'is_primary' => $media->is_primary,
+                    ];
+                }),
+                'owner' => [
+                    'id' => $listing->owner->id,
+                    'name' => $listing->owner->name,
+                ],
+                'created_at' => $listing->created_at->format('Y-m-d'),
+            ],
+            'price' => $basePrice,
+            'rating' => $rating,
+            'reviewCount' => $reviewCount,
+        ]);
+    }
+
+    private function generatePriceForListing($listing)
+    {
+        $basePrices = [
+            'konaklama' => [2000, 12000],
+            'restoran' => [100, 400],
+            'aktivite' => [150, 600],
+            'eglence' => [200, 1000],
+            'alisveris' => [50, 300],
+            'saglik-spa' => [80, 500],
+            'ulasim' => [100, 800],
+            'kultur-muze' => [20, 150],
+        ];
+
+        $priceRange = $basePrices[$listing->placeType->slug] ?? [100, 1000];
+        $basePrice = rand($priceRange[0], $priceRange[1]);
+
+        // Adjust for featured listings
+        if ($listing->is_featured) {
+            $basePrice = (int)($basePrice * 1.2);
+        }
+
+        return $basePrice;
     }
 }

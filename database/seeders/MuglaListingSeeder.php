@@ -34,8 +34,8 @@ class MuglaListingSeeder extends Seeder
                 'website_url' => 'https://hilton.com',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800',
-                    'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800'
+                    'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -49,7 +49,8 @@ class MuglaListingSeeder extends Seeder
                 'contact_phone' => '+90 252 417 4950',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800'
+                    'https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -64,7 +65,8 @@ class MuglaListingSeeder extends Seeder
                 'website_url' => 'https://sixsenses.com',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800'
+                    'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -78,7 +80,8 @@ class MuglaListingSeeder extends Seeder
                 'contact_phone' => '+90 252 311 1888',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800'
+                    'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
 
@@ -94,7 +97,8 @@ class MuglaListingSeeder extends Seeder
                 'contact_phone' => '+90 252 316 1228',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800'
+                    'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -108,7 +112,8 @@ class MuglaListingSeeder extends Seeder
                 'contact_phone' => '+90 252 412 5484',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800'
+                    'https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -121,7 +126,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'İskele Mahallesi',
                 'contact_phone' => '+90 252 712 3456',
                 'images' => [
-                    'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800'
+                    'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -134,7 +140,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Balık Pazarı',
                 'contact_phone' => '+90 252 614 2547',
                 'images' => [
-                    'https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800'
+                    'https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
 
@@ -151,7 +158,8 @@ class MuglaListingSeeder extends Seeder
                 'website_url' => 'https://kasdiving.com',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800'
+                    'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -165,7 +173,8 @@ class MuglaListingSeeder extends Seeder
                 'contact_phone' => '+90 252 617 0511',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+                    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -178,7 +187,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Bardakçı Koyu',
                 'contact_phone' => '+90 252 316 7788',
                 'images' => [
-                    'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800'
+                    'https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -191,7 +201,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Dalyan İskelesi',
                 'contact_phone' => '+90 252 284 2194',
                 'images' => [
-                    'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800'
+                    'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
 
@@ -208,7 +219,8 @@ class MuglaListingSeeder extends Seeder
                 'website_url' => 'https://halikarnas.com.tr',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800'
+                    'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1485686531765-ba63b07845a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -221,7 +233,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Torba Mahallesi',
                 'contact_phone' => '+90 252 311 5000',
                 'images' => [
-                    'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800'
+                    'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
 
@@ -236,7 +249,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Tepe Mahallesi',
                 'contact_phone' => '+90 252 412 1034',
                 'images' => [
-                    'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800'
+                    'https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -249,7 +263,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Neyzen Tevfik Caddesi',
                 'contact_phone' => '+90 252 313 1860',
                 'images' => [
-                    'https://images.unsplash.com/photo-1555529902-d5a4fdb83eac?w=800'
+                    'https://images.unsplash.com/photo-1555529902-d5a4fdb83eac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1567306301408-9b74389f000b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
 
@@ -265,7 +280,8 @@ class MuglaListingSeeder extends Seeder
                 'contact_phone' => '+90 252 522 2345',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800'
+                    'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
 
@@ -280,7 +296,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Milas Bodrum Havalimanı',
                 'contact_phone' => '+90 252 523 0101',
                 'images' => [
-                    'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800'
+                    'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
 
@@ -297,7 +314,8 @@ class MuglaListingSeeder extends Seeder
                 'website_url' => 'https://bodrum-museum.com',
                 'is_featured' => true,
                 'images' => [
-                    'https://images.unsplash.com/photo-1594736797933-d0b22084e7c5?w=800'
+                    'https://images.unsplash.com/photo-1594736797933-d0b22084e7c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ],
             [
@@ -310,7 +328,8 @@ class MuglaListingSeeder extends Seeder
                 'address_line1' => 'Gümüşlük Mahallesi',
                 'contact_phone' => '+90 252 394 3022',
                 'images' => [
-                    'https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=800'
+                    'https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+                    'https://images.unsplash.com/photo-1505993597735-c92c1971c3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
                 ]
             ]
         ];

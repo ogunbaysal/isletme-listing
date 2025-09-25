@@ -21,7 +21,12 @@ interface HomeProps {
     popularDestinations?: DisplayListing[];
 }
 
-export default function Home({ featuredListings = sampleListings, nearbyListings = sampleListings, popularDestinations = sampleListings }: HomeProps) {
+export default function Home({ featuredListings = [], nearbyListings = [], popularDestinations = [] }: HomeProps) {
+    // Use database data if available, otherwise fall back to sample data
+    const accommodations = featuredListings.length > 0 ? featuredListings : sampleListings.filter(listing => listing.type === 'Konaklama');
+    const restaurants = nearbyListings.length > 0 ? nearbyListings : sampleListings.filter(listing => listing.type === 'Restoran');
+    const activities = popularDestinations.length > 0 ? popularDestinations : sampleListings.filter(listing => listing.type === 'Aktivite');
+
     return (
         <>
             <Head title="Discover amazing places in Türkiye" />
@@ -48,7 +53,7 @@ export default function Home({ featuredListings = sampleListings, nearbyListings
                                     Tümünü Görüntüle
                                 </button>
                             </div>
-                            <ListingGrid listings={featuredListings} variant="horizontal" />
+                            <ListingGrid listings={accommodations} variant="horizontal" />
                         </div>
                     </section>
 
@@ -63,7 +68,7 @@ export default function Home({ featuredListings = sampleListings, nearbyListings
                                     Tümünü Görüntüle
                                 </button>
                             </div>
-                            <ListingGrid listings={nearbyListings} variant="horizontal" />
+                            <ListingGrid listings={restaurants} variant="horizontal" />
                         </div>
                     </section>
 
@@ -146,7 +151,7 @@ export default function Home({ featuredListings = sampleListings, nearbyListings
                                     🌟 Öne Çıkan Yerler
                                 </h2>
                             </div>
-                            <ListingGrid listings={popularDestinations} variant="grid" />
+                            <ListingGrid listings={activities} variant="grid" />
                         </div>
                     </section>
                 </main>

@@ -1,4 +1,5 @@
 import { HeartIcon, StarFilledIcon } from '@radix-ui/react-icons';
+import { Link } from '@inertiajs/react';
 
 // Extended interface for display purposes
 interface DisplayListing {
@@ -47,7 +48,7 @@ export function ListingGrid({ listings, variant = 'grid' }: SimpleListingGridPro
 
 function ListingCard({ listing }: { listing: DisplayListing }) {
     return (
-        <div className="group cursor-pointer flex-shrink-0 w-72 sm:w-auto">
+        <Link href={`/listing/${listing.id}`} className="group cursor-pointer flex-shrink-0 w-72 sm:w-auto block">
             {/* Image Container */}
             <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-200">
                 <img
@@ -95,7 +96,7 @@ function ListingCard({ listing }: { listing: DisplayListing }) {
                     <span className="text-sm text-gray-600"> / gece</span>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
 
@@ -108,7 +109,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Bodrum, Muğla',
         price: 8500,
         rating: 4.95,
-        images: ['https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400'],
+        images: ['https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Konaklama',
         distance: '25 km uzaklıkta'
     },
@@ -118,7 +119,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Cennet Koyu, Bodrum',
         price: 12000,
         rating: 4.92,
-        images: ['https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400'],
+        images: ['https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Konaklama',
         distance: '35 km uzaklıkta'
     },
@@ -128,7 +129,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Dalaman, Muğla',
         price: 4200,
         rating: 4.88,
-        images: ['https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=400'],
+        images: ['https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Konaklama',
         distance: '85 km uzaklıkta'
     },
@@ -139,7 +140,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Bodrum Marina, Bodrum',
         price: 320,
         rating: 4.87,
-        images: ['https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400'],
+        images: ['https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Restoran',
         distance: '15 km uzaklıkta'
     },
@@ -149,7 +150,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Marmaris Marina, Marmaris',
         price: 280,
         rating: 4.76,
-        images: ['https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400'],
+        images: ['https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Restoran',
         distance: '55 km uzaklıkta'
     },
@@ -159,7 +160,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Datça Merkez, Datça',
         price: 195,
         rating: 4.83,
-        images: ['https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400'],
+        images: ['https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Restoran',
         distance: '75 km uzaklıkta'
     },
@@ -170,7 +171,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Kaş Liman, Kaş',
         price: 350,
         rating: 4.94,
-        images: ['https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400'],
+        images: ['https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Aktivite',
         distance: '120 km uzaklıkta'
     },
@@ -180,7 +181,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Babadağ, Fethiye',
         price: 450,
         rating: 4.98,
-        images: ['https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400'],
+        images: ['https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Aktivite',
         distance: '95 km uzaklıkta'
     },
@@ -190,7 +191,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Dalyan, Ortaca',
         price: 180,
         rating: 4.79,
-        images: ['https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400'],
+        images: ['https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Aktivite',
         distance: '45 km uzaklıkta'
     },
@@ -201,7 +202,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Bodrum Merkez, Bodrum',
         price: 500,
         rating: 4.71,
-        images: ['https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400'],
+        images: ['https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Eğlence',
         distance: '20 km uzaklıkta'
     },
@@ -211,7 +212,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Torba, Bodrum',
         price: 850,
         rating: 4.82,
-        images: ['https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400'],
+        images: ['https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Eğlence',
         distance: '28 km uzaklıkta'
     },
@@ -222,7 +223,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Marmaris Merkez, Marmaris',
         price: 75,
         rating: 4.42,
-        images: ['https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400'],
+        images: ['https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Alışveriş',
         distance: '60 km uzaklıkta'
     },
@@ -232,7 +233,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Bodrum Marina, Bodrum',
         price: 120,
         rating: 4.58,
-        images: ['https://images.unsplash.com/photo-1555529902-d5a4fdb83eac?w=400'],
+        images: ['https://images.unsplash.com/photo-1555529902-d5a4fdb83eac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Alışveriş',
         distance: '18 km uzaklıkta'
     },
@@ -243,7 +244,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Sultaniye, Köyceğiz',
         price: 95,
         rating: 4.65,
-        images: ['https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400'],
+        images: ['https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Sağlık & SPA',
         distance: '38 km uzaklıkta'
     },
@@ -254,7 +255,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Bodrum Kalesi, Bodrum',
         price: 45,
         rating: 4.89,
-        images: ['https://images.unsplash.com/photo-1594736797933-d0b22084e7c5?w=400'],
+        images: ['https://images.unsplash.com/photo-1594736797933-d0b22084e7c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Kültür & Müze',
         distance: '22 km uzaklıkta'
     },
@@ -264,7 +265,7 @@ export const sampleListings: DisplayListing[] = [
         location: 'Gümüşlük, Bodrum',
         price: 25,
         rating: 4.73,
-        images: ['https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=400'],
+        images: ['https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'],
         type: 'Kültür & Müze',
         distance: '35 km uzaklıkta'
     }
